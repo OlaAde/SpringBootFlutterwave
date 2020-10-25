@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<center>
+    Processing... <br/> <img style="height: 50px;" src="https://media.giphy.com/media/swhRkVYLJDrCE/giphy.gif"/>
+</center>
+<script type="text/javascript" th:src="${url}">
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        let payload = '[[${payload}]]';
+        payload = payload.replaceAll(/&quot;/g, '\\"');
+        payload = payload.replaceAll('\\', '');
+        var data = JSON.parse(payload);
+        FlutterwaveCheckout(data);
+    });
+</script>
+</body>
+</html>

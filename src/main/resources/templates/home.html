@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>HOME</h1>
+<form th:action="@{/pay}" th:object="${payload}" method="post">
+    <div class="form-row">
+        <input type="hidden" name="amount" value="500"/> <!-- Replace the value with your transaction amount -->
+        <input type="hidden" name="payment_method" value="card,mobilemoney,ussd"/> <!-- Can be card, account, both -->
+        <input type="hidden" name="description" value="End Police Brutality"/>
+        <input type="hidden" name="country" value="NG"/> <!-- Replace the value with your transaction country -->
+        <input type="hidden" name="currency" value="UGX"/> <!-- Replace the value with your transaction currency -->
+        <input type="hidden" name="email" value="end@sars.com"/> <!-- Replace the value with your customer email -->
+        <input type="hidden" name="firstname" value="End" /> <!-- Replace the value with your customer firstname -->
+        <input type="hidden" name="lastname" value="Sars"/> <!-- Replace the value with your customer lastname -->
+        <input type="hidden" name="phonenumber" value="21102020"/>
+    </div>
+    <input type="submit" value="Buy"/>-->
+</form>
+</body>
+</html>

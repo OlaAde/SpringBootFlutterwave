@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "flutterwave.secret-key",
+      "type": "java.lang.String",
+      "description": "Flutterwave secret key."
+    },
+    {
+      "name": "flutterwave.public-key",
+      "type": "java.lang.String",
+      "description": "Flutterwave public key."
+    }
+  ]
+}
